@@ -107,7 +107,57 @@
             <artifactId>jsonevent-layout</artifactId>
             <version>1.7</version>
         </dependency>
+
+        <!-- -->
+        <dependency>
+            <groupId>org.rocksdb</groupId>
+            <artifactId>rocksdbjni</artifactId>
+            <version>5.8.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.yardstickframework</groupId>
+            <artifactId>yardstick</artifactId>
+            <version>0.8.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.ignite</groupId>
+            <artifactId>ignite-yardstick</artifactId>
+            <version>2.3.0</version>
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/libs/ignite-yardstick-2.3.0.jar</systemPath>-->
+        </dependency>
+
+        <dependency>
+            <groupId>ru.daradurvs</groupId>
+            <artifactId>ignite-rocksdb-store</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/libs/ignite-rocksdb-store-1.0-SNAPSHOT.jar</systemPath>-->
+        </dependency>
+        <!-- -->
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>project-repo</id>
+            <url>file://${basedir}libs</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
